@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Запис клієнтів</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Запис на прийом</h1>
+        <form id="bookingForm">
+            <label for="name">Ім'я клієнта:</label>
+            <input type="text" id="name" name="name" placeholder="Введіть ваше ім'я" required>
+
+            <label for="date">Дата запису:</label>
+            <input type="date" id="date" name="date" required>
+
+            <label for="time">Час запису:</label>
+            <input type="time" id="time" name="time" required>
+
+            <button type="submit">Записатися</button>
+        </form>
+
+        <div id="appointments">
+            <h2>Записи:</h2>
+            <ul id="appointmentList"></ul>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
